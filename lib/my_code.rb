@@ -14,7 +14,9 @@ def reduce(source_array, starting_point = nil)
   if starting_point != nil
     new = starting_point
     i = 0
-  source_array.unshift(new)
+  else
+    new = source_array[0]
+ 
   i = 1
   while i < source_array.length do
     new = yield(new, source_array[i])
