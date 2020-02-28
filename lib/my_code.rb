@@ -12,7 +12,7 @@ end
 
 def reduce(source_array, starting_point = nil)
   new = starting_point
-  source_array.shift(new)
+  source_array.unshift(new)
   i = 1
   while i < source_array.length do
     new = yield(new, source_array[i])
