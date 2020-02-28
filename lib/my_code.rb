@@ -11,6 +11,7 @@ end
 
 
 def reduce(source_array, starting_point = false)
+  if starting_point
   new = starting_point
   source_array.unshift(new)
   i = 1
