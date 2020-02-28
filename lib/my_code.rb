@@ -10,8 +10,9 @@ def map(source_array)
 end
 
 
-def reduce(source_array, starting_point = false)
-  if starting_point
+def reduce(source_array, starting_point = nil)
+  if starting_point != nil
+    
   new = starting_point
   source_array.unshift(new)
   i = 1
