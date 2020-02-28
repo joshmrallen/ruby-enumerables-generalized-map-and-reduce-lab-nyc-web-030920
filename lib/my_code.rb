@@ -11,12 +11,14 @@ end
 
 
 def reduce(source_array, starting_point = nil)
+
   if starting_point != nil
     new = starting_point
     i = 0
   else
     new = source_array[0]
- 
+  end
+  
   i = 1
   while i < source_array.length do
     new = yield(new, source_array[i])
