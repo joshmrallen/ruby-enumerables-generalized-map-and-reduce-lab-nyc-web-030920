@@ -12,8 +12,8 @@ end
 
 def reduce(source_array, starting_point = nil)
   if starting_point != nil
+    new = starting_point
     
-  new = starting_point
   source_array.unshift(new)
   i = 1
   while i < source_array.length do
