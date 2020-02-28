@@ -12,7 +12,7 @@ end
 
 def reduce(source_array, starting_point = nil)
 
-  if starting_point != nil
+  if starting_point
     new = starting_point
     i = 0
   else
